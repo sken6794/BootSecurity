@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h3>로그인 페이지</h3>
+	<h4> 여기에 비밀번호를 공개하지 않음 </h4>
+	<!-- 시큐리티 쓸때 name이 username, password로 약속이 되어있음 -->
+	<form action="loginForm" method="post">
+		<input type="text" name="username">
+		<input type="password" name="password">
+		<input type="checkbox" name="remember-me"> 날 기억해~
+		
+		<input type="submit" value="로그인!">
+	</form>
+	[[${msg}]]
+</body>
+
+</html>

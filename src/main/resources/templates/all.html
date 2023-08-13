@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h3>all 페이지</h3>
+
+	<div sec:authorize="isAuthenticated()"> <!-- 인증 되었다면 true, 아니면 false를 반환합니다. if문처럼 사용됩니다. -->
+		인증된 경우에 실행됩니다.<br />
+		[[${#authentication.principal}]]<br />
+		[[${#authentication.principal.username}]]<br /> <!-- UserDetails객체에서 만든 getter가 사용됩니다. -->
+		[[${#authentication.principal.password}]]<br /> <!-- UserDetails객체에서 만든 getter가 사용됩니다. -->
+		[[${#authentication.principal.role}]]<br /> <!-- UserDetails객체에서 만든 getter가 사용됩니다. -->
+	</div>
+</body>
+
+</html>

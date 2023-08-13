@@ -1,0 +1,8 @@
+## 시큐리티 수업 관련 테이블 작성 -- 권한처리에 대해서 
+create table users(
+	username varchar(50) primary key, #id 시큐리티에서 기본적으로 username이라고 id를 쓴다
+    password varchar(50), # 비밀번호 
+    role varchar(50) # 권한
+);
+
+
