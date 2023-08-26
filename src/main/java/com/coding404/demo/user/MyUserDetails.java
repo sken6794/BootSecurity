@@ -15,7 +15,7 @@ public class MyUserDetails implements UserDetails{
 	//멤버변수로 UserVO객체를 받는다.
 	private UserVO userVO;
 	
-	public MyUserDetails(UserVO vo) {
+	public MyUserDetails(UserVO vo) { //생성자로 유저객체를 받아서 MyUserDetails 가 갖고있는 멤버변수를 전달받은 객체로 대체
 		this.userVO = vo;
 		
 	}
@@ -41,6 +41,8 @@ public class MyUserDetails implements UserDetails{
 			}
 		});
 		
+		
+	
 		return list;
 	}
 

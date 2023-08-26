@@ -33,7 +33,6 @@ public class MyUserDetailService implements UserDetailsService{
 			//시큐리티 설정파일에 defaultSuccessURL을 설정
 		}
 		
-		
 		return null; //회원 정보가 없다면 null을 반환받고 끝
 	}
 	
